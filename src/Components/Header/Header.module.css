@@ -1,65 +1,58 @@
-.Header {box-sizing: border-box;
-
-
-
-
+/*Header style*/
+.Header {
+box-sizing: border-box;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
 align-items: center;
 padding: 11px 220px 11px 219px;
 gap: 10px;
-
 position: absolute;
 width: 100%;
 height: 70px;
 left: 0px;
 top: 0px;
-
 background: rgba(34, 34, 40, 0.8);
 border: 1px solid rgba(63, 63, 74, 0.6);}
 
+
+/*Header's a style*/
+
+
 .Header a {
     text-decoration: none;
-
-
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 100%;
-    /* identical to box height, or 15px */
-
-    letter-spacing: -0.005em;
-
     color: #FFFFFF;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
 }
 
+/*Header's a style hand over*/
 .Header a:hover{
     cursor: pointer;
    color: #79109D;
 }
 
 
-
+/*Main logo style*/
 .logo {
     width: 70px;
     height: 70px;
 
 }
-
+/*Main logo style hand over*/
 .logo:hover{
     transform: scale(120%);
     transition: 1s;
 }
 
+
+/*Users block*/
 .User_info{
 
 display: flex;
@@ -85,6 +78,5 @@ display: flex;
     width: 40px;
     height: 40px;
     padding-left: 5px;
-
 
 }

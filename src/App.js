@@ -1,9 +1,14 @@
 import {Header} from "./Components/Header/Header";
+import BasicExample from "./Components/Test/TestComponent";
+
 
 const App = () => {
   return (
-      <div style={{width:'100%'}}>
+      <div>
           <Header/>
+
+
+
 
 
       </div>
