@@ -1,7 +1,11 @@
+import {Header} from "./Components/Header/Header";
+
 const App = () => {
   return (
-      <div>
-        App
+      <div style={{width:'100%'}}>
+          <Header/>
+
+
       </div>
   );
 };
