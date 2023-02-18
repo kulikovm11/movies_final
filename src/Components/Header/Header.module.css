@@ -7,7 +7,7 @@ justify-content: space-around;
 align-items: center;
 padding: 11px 220px 11px 219px;
 gap: 10px;
-position: absolute;
+/*position: absolute;*/
 width: 100%;
 height: 70px;
 left: 0px;
@@ -38,6 +38,10 @@ border: 1px solid rgba(63, 63, 74, 0.6);}
    color: #79109D;
 }
 
+.Header a[class='active']{
+    color: #79109D;
+
+}
 
 /*Main logo style*/
 .logo {
@@ -66,6 +70,7 @@ display: flex;
     background-color: grey;
     border: none;
     height: 20px;
+    border-radius: 5px;
 }
 
 .User_info button:hover{

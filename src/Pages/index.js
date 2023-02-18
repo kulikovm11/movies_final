@@ -1,0 +1,5 @@
+export * from './HomePage/Home'
+export * from './TopPage/TopMovies'
+export * from './AboutPage/About'
+export * from './CategoryPage/Category'
+export * from './NotFoundPage/NotFound'

@@ -1,11 +1,12 @@
 
-
+import {NavLink} from "react-router-dom";
 
 
 import css from './Header.module.css'
 import LogoLight from './Logo-light.com.png';
 import LogoDark from './Logo-dark.png';
 import UserIcon from './UserLogo.png'
+
 
 
 const Header = () => {
@@ -17,10 +18,10 @@ const Header = () => {
     return (
         <div className={css.Header}>
             <img src={LogoLight} alt="logo" className={css.logo}/>
-            <a href={''}>Главная</a>
-            <a href={''}>Категории</a>
-            <a href={''}>Топ</a>
-            <a href={''}>О нас</a>
+            <NavLink to={""}>Главная</NavLink>
+            <NavLink to={"category_search"}>Категории</NavLink>
+            <NavLink to={"top"}>Топ</NavLink>
+            <NavLink to={"about"}>О нас</NavLink>
 
 
             <div className={css.User_info}>
@@ -28,7 +29,7 @@ const Header = () => {
                 <button>Выйти</button>
             </div>
 
-            <button>Dark Mode</button>
+            <button>Light Mode</button>
 
 
 
