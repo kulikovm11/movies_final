@@ -5,8 +5,6 @@ import {movieService} from "../../services/movieService";
 const initialState = {
     moviesArr: [],
     page:null,
-    prev:null,
-    next:null,
     errors: null,
     loading : null,
 }

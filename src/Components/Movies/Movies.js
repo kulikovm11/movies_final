@@ -7,7 +7,7 @@ import {movieActions} from "../../redux";
 import {Movie} from "../Movie/Movie";
 
 const Movies = () => {
-    const {moviesArr,prev,next} = useSelector(state => state.movies);
+    const {moviesArr} = useSelector(state => state.movies);
     const dispatch = useDispatch();
     const [query, setQuery] = useSearchParams({page:'1'})
 

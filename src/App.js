@@ -1,7 +1,7 @@
 import {Route, Routes} from "react-router-dom";
 
 import {MainLayout} from "./Layouts";
-import {About, Category, Home, NotFound, TopMovies} from "./Pages";
+import {Genres, AllFilms, FilmDetails, Home, NotFound, TopMovies} from "./Pages";
 
 
 const App = () => {
@@ -9,12 +9,17 @@ const App = () => {
       <div>
 
           <Routes>
+
               <Route path={'/'} element={<MainLayout/>}>
 
                   <Route index element={<Home/>}/>
-                  <Route path={'category_search'} element={<Category/>}/>
+
+                  <Route path={'all_films'} element={<AllFilms/>}>
+                      <Route path={':filmId'} element={<FilmDetails/>}/>
+                  </Route>
+
                   <Route path={'top'} element={<TopMovies/>}/>
-                  <Route path={'about'} element={<About/>}/>
+                  <Route path={'genres'} element={<Genres/>}/>
 
               </Route>
 

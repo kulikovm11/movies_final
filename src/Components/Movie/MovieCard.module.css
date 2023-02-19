@@ -7,13 +7,30 @@
     margin: 5px;
     padding: 10px;
 }
+.Card button {
+    background-color: rgba(121, 16, 157, 0.25);
+    margin-top: 30px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.Card button:hover{
+    background-color: #79109D;
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(110%);
+
+}
 
 .Title{
     display: flex;
+    flex-direction: column;
     align-items: center;
     font-size: 25px;
     border-bottom:1px solid rgba(121, 16, 157, 0.25);
-    height: 15%;
+    height: 20%;
     margin-bottom: 10px;
 
 }
@@ -27,6 +44,7 @@
 
 .Description{
     display: flex;
+
 
 }
 
@@ -43,6 +61,7 @@
     margin-left: 10px;
     display: flex;
     flex-direction: column;
+
 
 
 

@@ -19,9 +19,9 @@ const Header = () => {
         <div className={css.Header}>
             <img src={LogoLight} alt="logo" className={css.logo}/>
             <NavLink to={""}>Главная</NavLink>
-            <NavLink to={"category_search"}>Категории</NavLink>
+            <NavLink to={"all_films"}>Фильмы</NavLink>
             <NavLink to={"top"}>Топ</NavLink>
-            <NavLink to={"about"}>О нас</NavLink>
+            <NavLink to={"genres"}>Жанры</NavLink>
 
             <form>
             <input type="text" placeholder={"Искать"}/>

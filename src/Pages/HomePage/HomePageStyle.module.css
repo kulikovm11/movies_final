@@ -1,0 +1,196 @@
+.Container{
+    background-color: #18181B;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Frame{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+
+    width: auto;
+    height: 500px;
+}
+
+.imagination{
+
+    width: 520px;
+    height: 320px;
+    left: 480px;
+    top: 89px;
+
+
+}
+
+.TxtIntroduce{
+    color: white;
+    margin:25px;
+}
+
+.imagination img {
+    border-radius: 20px;
+}
+
+.ellipse{
+    position: absolute;
+    width: 534px;
+    height: 482px;
+    left: 600px;
+    top: 200px;
+
+    background: rgba(121, 16, 157, 0.25);
+    filter: blur(100px);
+}
+
+
+.Pt2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+
+/* left part*/
+.Left{
+    border: 1px solid red;
+    width: 398px;
+    height: 549px;
+}
+
+.a{
+    position: relative;
+    width: 145px;
+    height: 145px;
+    left: 51.5px;
+    top: 0px;
+
+    background: #414141;
+    border-radius: 22.0386px;
+}
+.b{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    left: 253.5px;
+    top: 99px;
+
+    background: #FFF170;
+    border-radius: 11.8669px;
+}
+.c{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    left: 114.5px;
+    top: 75px;
+
+    background: #D9D9D9;
+    border-radius: 9.11941px;
+
+}
+.d{
+    position: relative;
+    width: 94.77px;
+    height: 96px;
+    left: 145.5px;
+    top: 165px;
+
+    background: #D1DCEB;
+    border-radius: 14.819px;
+}
+.e{
+    position: relative;
+    width: 145px;
+    height: 145px;
+    left: -69.5px;
+    top: 5px;
+
+    background: #FFF170;
+    border-radius: 22.0386px;
+}
+
+.Middle{
+    border: 1px solid blue;
+    width: 694px;
+    height: 216px;
+}
+
+
+
+/* right part*/
+
+
+
+.Right{
+    border: 1px solid green;
+    width: 398px;
+    height: 549px;
+}
+
+.f{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    left: 75px;
+    top: 104.5px;
+
+    background: #2C84B5;
+    border-radius: 14.3357px;
+    transform: rotate(-180deg);
+}
+
+.g{
+    position: relative;
+    width: 137.27px;
+    height: 138px;
+    left: 227px;
+    top: 147.5px;
+
+    background: #79109D;
+    border-radius: 21.3198px;
+    transform: rotate(-180deg);
+
+}
+
+.h{
+    position: relative;
+    width: 58px;
+    height: 58px;
+    left: 200px;
+    top: -222px;
+
+    background: #D1DCEB;
+    border-radius: 8.82199px;
+    transform: rotate(-180deg);
+}
+
+.i{
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 1515px;
+
+
+    background: #FF6F6F;
+    border-radius: 13.1199px;
+    transform: rotate(-180deg);
+}
+
+.j{
+    position: relative;
+    width: 138px;
+    height: 138px;
+    left: 89px;
+    top: 121px;
+
+    background: #FFFFFF;
+    border-radius: 21.3198px;
+    transform: rotate(-180deg);
+}

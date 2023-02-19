@@ -1,14 +1,21 @@
 import css from './MovieCard.module.css'
 import {posterURL} from "../../configs/urls";
+import {Stars} from "../StarsComponent/Stars";
+import {useNavigate} from "react-router-dom";
 
 const Movie = ({movie}) => {
-    const{original_title,title,vote_average,poster_path,release_date,overview}=movie
+
+    const navigate = useNavigate()
+
+
+    const{id,original_title,title,vote_average,poster_path,release_date}=movie
     return (
         <div className={css.Card}>
 
             <div className={css.Title}>
                 {title}
-                <p>{vote_average}</p>
+
+                <Stars rating={vote_average}/>
             </div>
 
             <div className={css.Description}>
@@ -18,18 +25,17 @@ const Movie = ({movie}) => {
                 </div>
 
                 <div className={css.Short_info}>
+                    <span><b>Жанр:</b></span>
+                    <span><b>Дата релиза:</b> {release_date}</span>
                     <span>
                         <b>Оригинальное название:</b> {original_title}
                     </span>
-                    <span><b>Дата релиза:</b> {release_date}</span>
-                    <span><b>Жанр:</b></span>
+
+                <button onClick={()=>navigate(id.toString(),{state:movie})}>Подробнее</button>
 
                 </div>
 
-                {/*<div className={css.Overview}>*/}
-                {/*    {overview}*/}
 
-                {/*</div>*/}
 
 
             </div>
