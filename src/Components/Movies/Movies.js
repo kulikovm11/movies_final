@@ -1,6 +1,8 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useSearchParams} from "react-router-dom";
 import {useEffect} from "react";
+
+import css from './MoviesStyle.module.css'
 import {movieActions} from "../../redux";
 import {Movie} from "../Movie/Movie";
 
@@ -16,14 +18,14 @@ const Movies = () => {
 
 
     return (
-        <div>
+        <div className={css.Container}>
 
 
 
             {moviesArr.map(movie => <Movie key={movie.id} movie={movie}/>)}
             <div>
-                <button  onClick={()=>setQuery(query=>({page:+query.get('page')-1}))}>prev</button>
-                <button  onClick={()=>setQuery(query=>({page:+query.get('page')+1}))}>next</button>
+                {/*<button  onClick={()=>setQuery(query=>({page:+query.get('page')-1}))}>prev</button>*/}
+                {/*<button  onClick={()=>setQuery(query=>({page:+query.get('page')+1}))}>next</button>*/}
             </div>
 
 

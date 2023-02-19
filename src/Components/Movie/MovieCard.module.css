@@ -1,3 +1,53 @@
 .Card{
-    border: 1px solid purple;
+    border-radius: 20px;
+    width: 600px;
+    height: 400px;
+    color: white;
+    background-color: #232229;
+    margin: 5px;
+    padding: 10px;
+}
+
+.Title{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    border-bottom:1px solid rgba(121, 16, 157, 0.25);
+    height: 20px;
+
+}
+
+
+.Title p {
+    padding-left: 10px;
+}
+
+
+
+.Description{
+    display: flex;
+
+}
+
+.Poster{
+
+}
+
+.Poster img {
+    width: 200px;
+    height: 300px;
+}
+
+.Short_info{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+
+.Overview{
+
 }
