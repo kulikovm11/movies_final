@@ -12,9 +12,14 @@ const FilmDetailsComponent = ({filmId}) => {
 
 
 
+
     useEffect(()=>{
         movieService.getById(filmId).then(({data})=>setFilm(data))
     },[])
+
+
+
+
 
     return (
         <div>
@@ -25,6 +30,8 @@ const FilmDetailsComponent = ({filmId}) => {
                 </>
 
             }
+
+
 
 
         </div>

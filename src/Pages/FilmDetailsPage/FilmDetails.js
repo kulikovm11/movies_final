@@ -1,6 +1,7 @@
 
 import {FilmDetailsComponent} from "../../Components";
 import {useParams} from "react-router-dom";
+import {Trailers} from "../../Components";
 
 const FilmDetails = () => {
 
@@ -10,6 +11,7 @@ const FilmDetails = () => {
         <div>
 
             <FilmDetailsComponent filmId={filmId}/>
+            <Trailers filmId={filmId}/>
 
 
         </div>
