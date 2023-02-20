@@ -59,7 +59,7 @@
 
 /* left part*/
 .Left{
-    border: 1px solid red;
+
     width: 398px;
     height: 549px;
 }
@@ -73,7 +73,20 @@
 
     background: #414141;
     border-radius: 22.0386px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.a img {
+    width: 140px;
+    height: 100px;
+}
+
+
+
+
+
 .b{
     position: relative;
     width: 75px;
@@ -83,6 +96,13 @@
 
     background: #FFF170;
     border-radius: 11.8669px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.b img {
+    width: 70px;
+    height: 70px;
 }
 .c{
     position: relative;
@@ -93,8 +113,17 @@
 
     background: #D9D9D9;
     border-radius: 9.11941px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
+
+.c img {
+    width: 55px;
+    height: 55px;
+}
+
 .d{
     position: relative;
     width: 94.77px;
@@ -104,6 +133,13 @@
 
     background: #D1DCEB;
     border-radius: 14.819px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d img {
+    width: 90px;
+    height: 90px;
 }
 .e{
     position: relative;
@@ -114,12 +150,21 @@
 
     background: #FFF170;
     border-radius: 22.0386px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.e img {
+    width: 140px;
+    height: 140px;
 }
 
 .Middle{
-    border: 1px solid blue;
+
     width: 694px;
     height: 216px;
+    color: white;
+
 }
 
 
@@ -129,7 +174,7 @@
 
 
 .Right{
-    border: 1px solid green;
+
     width: 398px;
     height: 549px;
 }
@@ -143,7 +188,13 @@
 
     background: #2C84B5;
     border-radius: 14.3357px;
-    transform: rotate(-180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f img {
+    width: 85px;
+    height: 40px;
 }
 
 .g{
@@ -155,8 +206,16 @@
 
     background: #79109D;
     border-radius: 21.3198px;
-    transform: rotate(-180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+
+}
+
+.g img {
+    width: 130px;
+    height: 130px;
 }
 
 .h{
@@ -168,7 +227,15 @@
 
     background: #D1DCEB;
     border-radius: 8.82199px;
-    transform: rotate(-180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.h img {
+    width: 40px;
+    height: 50px;
 }
 
 .i{
@@ -180,7 +247,14 @@
 
     background: #FF6F6F;
     border-radius: 13.1199px;
-    transform: rotate(-180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i img {
+    width: 60px;
+    height: 20px;
 }
 
 .j{
@@ -192,5 +266,13 @@
 
     background: #FFFFFF;
     border-radius: 21.3198px;
-    transform: rotate(-180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.j img {
+    width: 100px;
+    height: 100px;
+
 }

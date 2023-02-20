@@ -1,7 +1,9 @@
+import {Link, useNavigate} from "react-router-dom";
+
+
 import css from './MovieCard.module.css'
 import {posterURL} from "../../configs/urls";
 import {Stars} from "../StarsComponent/Stars";
-import {useNavigate} from "react-router-dom";
 
 const Movie = ({movie}) => {
 
@@ -31,7 +33,8 @@ const Movie = ({movie}) => {
                         <b>Оригинальное название:</b> {original_title}
                     </span>
 
-                <button onClick={()=>navigate(id.toString(),{state:movie})}>Подробнее</button>
+
+                    <button onClick={()=>navigate(id.toString())}>Подробнее</button>
 
                 </div>
 

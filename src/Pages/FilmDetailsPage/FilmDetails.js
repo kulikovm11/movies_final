@@ -1,13 +1,15 @@
 
 import {FilmDetailsComponent} from "../../Components";
+import {useParams} from "react-router-dom";
 
 const FilmDetails = () => {
 
+    const {filmId} = useParams()
 
     return (
         <div>
 
-            <FilmDetailsComponent/>
+            <FilmDetailsComponent filmId={filmId}/>
 
 
         </div>

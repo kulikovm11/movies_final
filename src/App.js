@@ -14,9 +14,9 @@ const App = () => {
 
                   <Route index element={<Home/>}/>
 
-                  <Route path={'all_films'} element={<AllFilms/>}>
-                      <Route path={':filmId'} element={<FilmDetails/>}/>
-                  </Route>
+                  <Route path={'all_films'} element={<AllFilms/>}/>
+                  <Route path={'all_films/:filmId'} element={<FilmDetails/>}/>
+
 
                   <Route path={'top'} element={<TopMovies/>}/>
                   <Route path={'genres'} element={<Genres/>}/>

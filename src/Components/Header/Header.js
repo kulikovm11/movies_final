@@ -23,14 +23,6 @@ const Header = () => {
             <NavLink to={"top"}>Топ</NavLink>
             <NavLink to={"genres"}>Жанры</NavLink>
 
-            <form>
-            <input type="text" placeholder={"Искать"}/>
-                <button>Search</button>
-
-            </form>
-
-
-
 
             <div className={css.User_info}>
                 <img src={UserIcon}  alt="UserIcon" className={css.user_logo}/>
