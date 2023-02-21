@@ -5,7 +5,7 @@ const urls = {
     movies:'/discover/movie?page&language=ru',
     movie:'/movie',
     genres:'/genre/movie/list',
-    youTube:'https://www.youtube.com/embed/'
+
 }
 
 

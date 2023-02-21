@@ -13,7 +13,7 @@ const Trailers = ({filmId}) => {
         console.log(data.results)})
 
 
-    },[])
+    },[filmId])
 
 
 
@@ -22,18 +22,10 @@ const Trailers = ({filmId}) => {
 
 
     return (
-        <div>
+        <div style={{display:'flex', justifyContent:'space-around'}}>
 
             {filtered.map(video=> <Trailer key={video.id} video={video}/>)}
 
-
-
-
-
-
-
-
-            {/*<Trailer video={videos}/>*/}
 
 
 

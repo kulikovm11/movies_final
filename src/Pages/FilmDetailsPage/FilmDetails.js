@@ -2,13 +2,14 @@
 import {FilmDetailsComponent} from "../../Components";
 import {useParams} from "react-router-dom";
 import {Trailers} from "../../Components";
+import css from './DetailsPageStyle.module.css'
 
 const FilmDetails = () => {
 
     const {filmId} = useParams()
 
     return (
-        <div>
+        <div className={css.Wrap}>
 
             <FilmDetailsComponent filmId={filmId}/>
             <Trailers filmId={filmId}/>

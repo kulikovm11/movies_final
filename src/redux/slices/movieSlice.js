@@ -46,6 +46,7 @@ const movieSlice = createSlice({
                 state.moviesArr = results
                 state.page = page
 
+
             })
 })
 

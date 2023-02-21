@@ -7,13 +7,15 @@ import {movieActions} from "../../redux";
 import {Movie} from "../Movie/Movie";
 
 const Movies = () => {
-    const {moviesArr} = useSelector(state => state.movies);
+    const {moviesArr, page} = useSelector(state => state.movies);
     const dispatch = useDispatch();
     const [query, setQuery] = useSearchParams({page:'1'})
 
     useEffect(()=>{
         dispatch(movieActions.getAll({page:query.get('page')}))
     },[dispatch, query])
+
+
 
 
 
@@ -24,8 +26,8 @@ const Movies = () => {
 
             {moviesArr.map(movie => <Movie key={movie.id} movie={movie}/>)}
             <div>
-                {/*<button  onClick={()=>setQuery(query=>({page:+query.get('page')-1}))}>prev</button>*/}
-                {/*<button  onClick={()=>setQuery(query=>({page:+query.get('page')+1}))}>next</button>*/}
+                <button disabled={+query.get('page')<=1} onClick={()=>setQuery(query=>({page:+query.get('page')-1}))}>Назад</button>
+                <button onClick={()=>setQuery(query=>({page:+query.get('page')+1}))}>Дальше</button>
             </div>
 
 
