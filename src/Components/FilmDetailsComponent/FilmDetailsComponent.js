@@ -27,61 +27,79 @@ const FilmDetailsComponent = ({filmId}) => {
         <div className={css.Content}>
             {film &&
                 <>
-                    <img src={posterURL+film.backdrop_path} alt=""/>
+                    <div className={css.Description}>
 
 
-                    {film.genres.length > 0 ? (
+                        <div className='data'>
 
-                    <div>
-                        <b>Жанры:</b>
-                    {film.genres.map(genre=><span>{` ${genre.name}`}</span>)}
+                            {film.genres.length > 0 ? (
 
-                    </div>) : null
+                            <div>
+                                <b style={{color:'plum'}}>Жанры:</b>
+                            {film.genres.map(genre=><span>{` ${genre.name}`}</span>)}
 
-                    }
+                            </div>) : null
+
+                            }
+
+
+                            {film.production_companies.length > 0 ? (
+                                <div>
+                                    <b style={{color:'plum'}}>Киностудия:</b>
+                                    {film.production_companies.map((studio) => (
+                                        <div>{studio.name}</div>
+                                    ))}
+                                </div>
+                            ) : null}
+
+
+                            {film.production_countries.length > 0 ? (
+                                <div>
+                                <b style={{color:'plum'}}>Страна:</b>
+                                {film.production_countries.map(countrie=><div>{countrie.name}</div>)}
+
+                            </div>): null
+                            }
 
 
 
+                            {film.runtime ? (
 
-                    {film.production_companies.length > 0 ? (
-                        <div>
-                            <b>Киностудия</b>
-                            {film.production_companies.map((studio) => (
-                                <div>{studio.name}</div>
-                            ))}
+                            <p>
+                                <b style={{color:'plum'}}>Длительность: </b>{film.runtime} мин.
+                            </p>
+                            ) : null}
+
+
+                            {film.release_date ? (
+                                <p>
+                                    <b style={{color:'plum'}}>Дата релиза: </b> {film.release_date}
+                                </p>
+                            ) : null}
+
                         </div>
-                    ) : null}
-
-                    {film.production_countries.length > 0 ? (
-                        <div>
-                        <b>Страна</b>
-                        {film.production_countries.map(countrie=><div>{countrie.name}</div>)}
-
-                    </div>): null
-                    }
 
 
-                    {film.runtime ? (
+                        <div className={css.Poster}>
 
-                    <p>
-                        <b>Длительность: </b>{film.runtime} мин.
-                    </p>
-                    ) : null}
+                            <img src={posterURL+film.backdrop_path} alt="poster"/>
+
+                        </div>
+
+                    </div>
+
+                    <div className={css.Overview}>
+
+                        {film.overview ? (
+
+                        <p>{film.overview}</p>
+                            ) : null}
+
+                    </div>
 
 
 
 
-                    {film.release_date ? (
-                        <p>
-                            <b>Дата релиза: </b> {film.release_date}
-                        </p>
-                    ) : null}
-
-
-                    {film.overview ? (
-
-                    <p>{film.overview}</p>
-                        ) : null}
 
 
 

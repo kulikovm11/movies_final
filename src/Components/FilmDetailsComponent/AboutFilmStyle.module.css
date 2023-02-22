@@ -1,7 +1,51 @@
 .Content {
-
+    background-color: #232229;
 }
 
 .Content p {
-    /*color: white;*/
+    color: white;
+}
+
+.Content span {
+   color: #2C84B5;
+    margin-left: 5px;
+
+}
+
+
+.Description{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    min-height: 280px;
+    left: 0px;
+    top: 1155px;
+    background: linear-gradient(90.17deg, #732ac0 0.79%, rgba(106, 9, 178, 0.38) 39.75%, rgba(97, 43, 155, 0) 54.1%, rgba(86, 60, 155, 0) 99.45%);
+    border-radius: 20px;
+
+    margin-left: 50px;
+    margin-top: 10px;
+
+    padding: 20px;
+}
+
+.Poster img{
+    border-radius: 20px;
+}
+
+.Overview{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    min-height: 280px;
+    left: 0px;
+    top: 1155px;
+    background: linear-gradient(90.17deg, #732ac0 0.79%, rgba(106, 9, 178, 0.38) 39.75%, rgba(97, 43, 155, 0) 54.1%, rgba(86, 60, 155, 0) 99.45%);
+    border-radius: 20px;
+
+    margin-left: 150px;
+    margin-top: 10px;
+
+    padding: 20px;
+    font-size: 20px;
 }

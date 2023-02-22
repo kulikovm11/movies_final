@@ -22,7 +22,7 @@ const Trailers = ({filmId}) => {
 
 
     return (
-        <div style={{display:'flex', justifyContent:'space-around'}}>
+        <div style={{display:'flex', justifyContent:'space-around',backgroundColor: '#232229'}}>
 
             {filtered.map(video=> <Trailer key={video.id} video={video}/>)}
 
