@@ -37,6 +37,7 @@ const Movies = () => {
     }
 
 
+
     return (
         <>
             <div className={css.Form}>
@@ -55,7 +56,7 @@ const Movies = () => {
             </div>
         <div className={css.Container}>
 
-            {(movies.length > 0 ? movies : moviesArr).map(movie => <Movie key={movie.id} movie={movie} />)}
+            {(movies.length > 0 ? movies : moviesArr).map(movie => <Movie key={movie.id} movie={movie}/>)}
 
 
 

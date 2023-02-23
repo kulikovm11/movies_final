@@ -1,7 +1,7 @@
 import {Route, Routes} from "react-router-dom";
 
 import {MainLayout} from "./Layouts";
-import {Genres, AllFilms, FilmDetails, Home, NotFound, TopMovies} from "./Pages";
+import {Genres, AllFilms, FilmDetails, Home, NotFound, TopMovies, FilteredByGenre} from "./Pages";
 
 
 const App = () => {
@@ -19,7 +19,13 @@ const App = () => {
 
 
                   <Route path={'top'} element={<TopMovies/>}/>
-                  <Route path={'genres'} element={<Genres/>}/>
+
+                  <Route path={'genres'} element={<Genres/>}>
+
+                  <Route path={':genreId'} element={<FilteredByGenre/>}/>
+
+                  </Route>
+                  <Route path={'genres/:genreId/:filmId'} element={<FilmDetails/>}/>
 
               </Route>
 

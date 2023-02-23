@@ -5,6 +5,7 @@ import {useEffect} from "react";
 import {genreActions} from "../../redux";
 import {GenreBadge} from "../GenreBagde/GenreBadge";
 
+
 const GenresComponent = ({genre_id}) => {
     const {genres} = useSelector(state => state.genres)
     const dispatch = useDispatch()
@@ -25,8 +26,8 @@ const GenresComponent = ({genre_id}) => {
 
     return (
         <div>
-            {genres.map(genre=> <GenreBadge key={genre.id} genre={genre} genre_id={genre_id} />)}
 
+            {genres.map(genre=> <GenreBadge key={genre.id} genre={genre} genre_id={genre_id} />)}
 
         </div>
     );

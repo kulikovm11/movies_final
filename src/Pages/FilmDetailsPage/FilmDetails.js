@@ -1,7 +1,7 @@
-
-import {FilmDetailsComponent} from "../../Components";
 import {useParams} from "react-router-dom";
-import {Trailers} from "../../Components";
+
+
+import {FilmDetailsComponent,Trailers} from "../../Components";
 import css from './DetailsPageStyle.module.css'
 
 const FilmDetails = () => {

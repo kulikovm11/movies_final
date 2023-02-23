@@ -10,7 +10,7 @@ const Trailers = ({filmId}) => {
     useEffect(()=>{
 
         movieService.getVideo(filmId).then(({data})=>{setVideos(data.results)
-        console.log(data.results)})
+        })
 
 
     },[filmId])

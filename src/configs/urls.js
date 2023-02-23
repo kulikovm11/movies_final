@@ -5,8 +5,9 @@ const APIKey = '3d9965bbb44cf56ae6990de438a7e949'
 const urls = {
     movies:'/discover/movie?page&language=ru',
     movie:'/movie',
-    genres:'/genre/movie/list',
+    genres:`/genre/movie/list?${APIKey}&language=ru`,
     search:`/search/movie?api_key=${APIKey}`,
+    byGenreId:`/discover/movie?${APIKey}`
 
 
 

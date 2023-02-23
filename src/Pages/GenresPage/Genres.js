@@ -1,7 +1,13 @@
+import {AllGenres} from "../../Components/FilterByGenre/AllGenres/AllGenres";
+import {Outlet} from "react-router-dom";
+
+
 const Genres = () => {
     return (
         <div>
-            Genres
+            <AllGenres/>
+            <Outlet/>
+
         </div>
     );
 };

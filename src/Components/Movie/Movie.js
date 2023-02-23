@@ -17,6 +17,7 @@ const Movie = ({movie}) => {
 
 
 
+
     return (
         <div className={css.Card}>
 

@@ -49,3 +49,20 @@
     padding: 20px;
     font-size: 20px;
 }
+
+.Actors{
+    display: flex;
+    justify-content: space-between;
+    min-width: 1000px;
+    min-height: 35px;
+    left: 0px;
+    top: 1155px;
+    background: linear-gradient(90.17deg, #732ac0 0.79%, rgba(106, 9, 178, 0.38) 39.75%, rgba(97, 43, 155, 0) 54.1%, rgba(86, 60, 155, 0) 99.45%);
+    border-radius: 20px;
+
+    margin-left: 250px;
+    margin-top: 10px;
+
+    padding: 10px;
+    font-size: 20px;
+}
