@@ -4,7 +4,7 @@ import {Outlet} from "react-router-dom";
 
 const Genres = () => {
     return (
-        <div>
+        <div style={{display:'flex', justifyContent:'space-around',backgroundColor:'#18181B'}}>
             <AllGenres/>
             <Outlet/>
 

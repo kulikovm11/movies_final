@@ -17,14 +17,14 @@ const App = () => {
                   <Route path={'all_films'} element={<AllFilms/>}/>
                   <Route path={'all_films/:filmId'} element={<FilmDetails/>}/>
 
-
                   <Route path={'top'} element={<TopMovies/>}/>
 
-                  <Route path={'genres'} element={<Genres/>}>
+                    <Route path={'genres'} element={<Genres/>}>
 
-                  <Route path={':genreId'} element={<FilteredByGenre/>}/>
+                        <Route path={':genreId'} element={<FilteredByGenre/>}/>
 
-                  </Route>
+                     </Route>
+
                   <Route path={'genres/:genreId/:filmId'} element={<FilmDetails/>}/>
 
               </Route>

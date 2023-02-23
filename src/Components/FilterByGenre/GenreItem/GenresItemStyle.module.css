@@ -1,0 +1,15 @@
+.Items{
+    color:white;
+
+    background: linear-gradient(90.17deg, #732ac0 0.79%, rgba(106, 9, 178, 0.38) 39.75%, rgba(97, 43, 155, 0) 54.1%, rgba(86, 60, 155, 0) 99.45%);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.Items:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    transition: 0.5s ease;
+}

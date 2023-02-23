@@ -17,7 +17,7 @@ const AllGenres = () => {
 
 
     return (
-        <div>
+        <div className="GENRES">
 
             {genresArr.map(genre=><GenreItem key={genre.id} genre={genre}/>)}
 

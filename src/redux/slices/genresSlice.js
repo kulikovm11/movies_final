@@ -22,6 +22,9 @@ const getGenres = createAsyncThunk(
 )
 
 
+
+
+
 const genresSlice = createSlice({
     name:'genresSlice',
     initialState,

@@ -1,4 +1,5 @@
 import {useNavigate} from "react-router-dom";
+import css from './GenresItemStyle.module.css'
 
 const GenreItem = ({genre}) => {
 
@@ -9,9 +10,7 @@ const GenreItem = ({genre}) => {
     return (
         <div>
 
-            <div  style={{color:'white', borderBottom:'1px solid blue'}}>{name}
-                <button onClick={()=>navigate(id.toString(), {state:genre})}>Клик</button>
-            </div>
+            <div  onClick={()=>navigate(id.toString(), {state:genre})} className={css.Items}> {name} </div>
 
 
         </div>
