@@ -13,6 +13,7 @@ const Movies = () => {
     const dispatch = useDispatch();
     const [query, setQuery] = useSearchParams({page:'1'})
 
+
     useEffect(()=>{
         dispatch(movieActions.getAll({page:query.get('page')}))
     },[dispatch, query])
@@ -21,6 +22,7 @@ const Movies = () => {
 
     const [req, setReq]=useState('')
     const [movies, setMovies] = useState([])
+
 
 
 
