@@ -1,5 +1,5 @@
 .Container{
-    background-color: #18181B;
+    /*background-color: #18181B;*/
     width: auto;
     height: auto;
     display: flex;
@@ -27,7 +27,7 @@
 }
 
 .TxtIntroduce{
-    color: white;
+    /*color: white;*/
     margin:25px;
 }
 
@@ -163,7 +163,7 @@
 
     width: 694px;
     height: 216px;
-    color: white;
+    /*color: white;*/
 
 }
 

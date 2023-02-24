@@ -1,9 +1,9 @@
 import {Movies} from "../../Components";
 
-const AllFilms = () => {
+const AllFilms = ({isLight}) => {
     return (
         <div>
-            <Movies/>
+            <Movies isLight={isLight}/>
         </div>
     );
 };

@@ -103,7 +103,7 @@ const FilmDetailsComponent = ({filmId}) => {
                             <b style={{color:'plum'}}>В главных ролях:</b>
 
                             {film.credits.cast.map((cast) => (
-                                <span style={{color:'white',}}>{cast.order<5? cast.name:null}</span>
+                                <span >{cast.order<5? cast.name:null}</span>
                             ))}
                         </div>
                     ) : null}

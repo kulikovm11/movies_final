@@ -9,7 +9,7 @@ import UserIcon from './UserLogo.png'
 
 
 
-const Header = () => {
+const Header = ({onThemeToggle, isLight}) => {
 
 
 
@@ -17,7 +17,7 @@ const Header = () => {
 
     return (
         <div className={css.Header}>
-            <img src={LogoLight} alt="logo" className={css.logo}/>
+            <img src={isLight? LogoDark : LogoLight} alt="logo" className={css.logo}/>
             <NavLink to={""}>Главная</NavLink>
             <NavLink to={"all_films"}>Фильмы</NavLink>
             <NavLink to={"top"}>Топ</NavLink>
@@ -29,7 +29,7 @@ const Header = () => {
                 <button>Выйти</button>
             </div>
 
-            <button>Light Mode</button>
+            <button onClick={onThemeToggle}>{isLight ? 'Light':'Dark'}</button>
 
 
 

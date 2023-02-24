@@ -10,3 +10,4 @@ export * from './GenresComponent/GenresComponent'
 export * from './FilterByGenre/AllGenres/AllGenres'
 export * from './FilterByGenre/GenreItem/GenreItem'
 export * from './FilterByGenre/SelectedByGenre/SelectedByGenre'
+

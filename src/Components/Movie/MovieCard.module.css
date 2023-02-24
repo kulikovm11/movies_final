@@ -1,4 +1,4 @@
-.Card{
+.Card_Dark{
     border-radius: 20px;
     width: 600px;
     height: 400px;
@@ -7,7 +7,19 @@
     margin: 5px;
     padding: 10px;
 }
-.Card button {
+
+.Card_Light{
+    border-radius: 20px;
+    width: 600px;
+    height: 400px;
+    color: black;
+    background-color:rgba(121, 16, 157, 0.25);
+    margin: 5px;
+    padding: 10px;
+}
+
+
+.Card_Dark button {
     background-color: rgba(121, 16, 157, 0.25);
     margin-top: 30px;
     border: none;
@@ -16,13 +28,36 @@
     border-radius: 10px;
 }
 
-.Card button:hover{
+.Card_Light button {
+    background-color: rgba(121, 16, 157, 0.25);
+    margin-top: 30px;
+    border: 1px solid  #79109D;;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.Card_Dark button:hover{
     background-color: #79109D;
     transition: 1s;
     cursor: pointer;
     transform: scale(110%);
 
 }
+
+.Card_Light button:hover{
+    background-color:  #79109D;
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(110%);
+
+}
+
+
+
+
+
+
 
 .Title{
     display: flex;

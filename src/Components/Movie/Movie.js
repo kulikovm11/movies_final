@@ -8,7 +8,7 @@ import {Stars} from "../StarsComponent/Stars";
 import {GenresComponent} from "../GenresComponent/GenresComponent";
 
 
-const Movie = ({movie}) => {
+const Movie = ({movie, isLight}) => {
 
     const navigate = useNavigate()
 
@@ -19,7 +19,7 @@ const Movie = ({movie}) => {
 
 
     return (
-        <div className={css.Card}>
+        <div className={isLight ? css.Card_Dark : css.Card_Light}>
 
             <div className={css.Title}>
                 {title}

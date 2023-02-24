@@ -2,36 +2,56 @@ import {Route, Routes} from "react-router-dom";
 
 import {MainLayout} from "./Layouts";
 import {Genres, AllFilms, FilmDetails, Home, NotFound, TopMovies, FilteredByGenre} from "./Pages";
+import {useState} from "react";
+import css from './Theme.css'
+import {Header} from "./Components";
 
 
 const App = () => {
+
+    const [isLightMode, setIsLightMode]=useState(false);
+
+    const handleThemeToggle = () => {
+        setIsLightMode(!isLightMode)
+    };
+
+
+
   return (
       <div>
 
-          <Routes>
 
-              <Route path={'/'} element={<MainLayout/>}>
+          <div  className={isLightMode ? "dark" : "light"}>
+              <Header onThemeToggle={handleThemeToggle} isLight={isLightMode}/>
 
-                  <Route index element={<Home/>}/>
+                  <Routes>
 
-                  <Route path={'all_films'} element={<AllFilms/>}/>
-                  <Route path={'all_films/:filmId'} element={<FilmDetails/>}/>
+                      <Route path={'/'} element={<MainLayout/>}>
 
-                  <Route path={'top'} element={<TopMovies/>}/>
+                          <Route index element={<Home/>}/>
 
-                    <Route path={'genres'} element={<Genres/>}>
+                          <Route path={'all_films'} element={<AllFilms isLight={isLightMode}/>}/>
+                          <Route path={'all_films/:filmId'} element={<FilmDetails/>}/>
 
-                        <Route path={':genreId'} element={<FilteredByGenre/>}/>
+                          <Route path={'top'} element={<TopMovies/>}/>
 
-                     </Route>
+                            <Route path={'genres'} element={<Genres/>}>
 
-                  <Route path={'genres/:genreId/:filmId'} element={<FilmDetails/>}/>
+                                <Route path={':genreId'} element={<FilteredByGenre isLight={isLightMode}/>}/>
 
-              </Route>
+                             </Route>
 
-              <Route path={'*'} element={<NotFound/>}/>
+                          <Route path={'genres/:genreId/:filmId'} element={<FilmDetails/>}/>
 
-          </Routes>
+                      </Route>
+
+                      <Route path={'*'} element={<NotFound/>}/>
+
+                  </Routes>
+
+          </div>
+
+
 
 
       </div>

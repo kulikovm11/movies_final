@@ -8,7 +8,7 @@ import {Movie} from "../Movie/Movie";
 
 import {movieService} from "../../services/movieService";
 
-const Movies = () => {
+const Movies = ({isLight}) => {
     const {moviesArr, page} = useSelector(state => state.movies);
     const dispatch = useDispatch();
     const [query, setQuery] = useSearchParams({page:'1'})
@@ -58,7 +58,7 @@ const Movies = () => {
             </div>
         <div className={css.Container}>
 
-            {(movies.length > 0 ? movies : moviesArr).map(movie => <Movie key={movie.id} movie={movie}/>)}
+            {(movies.length > 0 ? movies : moviesArr).map(movie => <Movie key={movie.id} movie={movie} isLight={isLight}/>)}
 
 
 
