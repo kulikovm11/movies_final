@@ -29,7 +29,7 @@ const Header = ({onThemeToggle, isLight}) => {
                 <button>Выйти</button>
             </div>
 
-            <button onClick={onThemeToggle}>{isLight ? 'Light':'Dark'}</button>
+            <button onClick={onThemeToggle} className={isLight? css.DarkBtn : css.LightBtn}>{isLight ? 'Light':'Dark'}</button>
 
 
 
