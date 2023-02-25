@@ -29,10 +29,25 @@
 .TxtIntroduce{
 
     margin:25px;
+    animation: slideIn 1s ease-out;
 }
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 
 .imagination img {
     border-radius: 20px;
+    animation: slideIn 1s ease-out;
 }
 
 .ellipse{
@@ -57,11 +72,28 @@
 }
 
 
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+
 /* left part*/
 .Left{
 
     width: 398px;
     height: 549px;
+    animation: appear 1s;
+    overflow-x: hidden;
 }
 
 .a{
@@ -163,6 +195,7 @@
 
     width: 694px;
     height: 216px;
+    animation: slideIn 1s ease-out;
 
 
 }
@@ -173,10 +206,14 @@
 
 
 
+
 .Right{
 
     width: 398px;
     height: 549px;
+    animation: appear 1s;
+    overflow-x: hidden;
+
 }
 
 .f{
