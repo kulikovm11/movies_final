@@ -1,4 +1,5 @@
 import {useLocation, useParams} from "react-router-dom";
+
 import {SelectedByGenre} from "../../Components";
 
 const FilteredByGenre = ({isLight}) => {

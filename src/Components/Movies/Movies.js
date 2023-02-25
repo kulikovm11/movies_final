@@ -9,7 +9,7 @@ import {Movie} from "../Movie/Movie";
 import {movieService} from "../../services/movieService";
 
 const Movies = ({isLight}) => {
-    const {moviesArr, page} = useSelector(state => state.movies);
+    const {moviesArr} = useSelector(state => state.movies);
     const dispatch = useDispatch();
     const [query, setQuery] = useSearchParams({page:'1'})
 

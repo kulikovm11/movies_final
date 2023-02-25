@@ -1,10 +1,11 @@
 import {useEffect, useState} from "react";
+import {useSearchParams} from "react-router-dom";
+
 import {movieService} from "../../../services/movieService";
 import {Movie} from "../../Movie/Movie";
 import css from "../../Movies/MoviesStyle.module.css";
-import {useSearchParams} from "react-router-dom";
 
-import {useDispatch} from "react-redux";
+
 
 
 const SelectedByGenre = ({genreId,state,isLight}) => {

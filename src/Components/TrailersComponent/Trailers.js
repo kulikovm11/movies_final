@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+
 import {movieService} from "../../services/movieService";
 import {Trailer} from "../TrailerComponent/Trailer";
 

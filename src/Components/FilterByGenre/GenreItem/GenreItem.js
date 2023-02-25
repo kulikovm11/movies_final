@@ -1,4 +1,5 @@
 import {useNavigate} from "react-router-dom";
+
 import css from './GenresItemStyle.module.css'
 
 const GenreItem = ({genre}) => {

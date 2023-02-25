@@ -1,4 +1,5 @@
 
+import {useEffect} from "react";
 import {NavLink} from "react-router-dom";
 
 
@@ -9,10 +10,13 @@ import UserIcon from './UserLogo.png'
 
 
 
-const Header = ({onThemeToggle, isLight}) => {
+const Header = ({onThemeToggle, isLight, setIsLight}) => {
 
 
-
+useEffect(()=>{
+    const savedTheme = localStorage.getItem('theme');
+    setIsLight(savedTheme === 'light');
+},[])
 
 
     return (

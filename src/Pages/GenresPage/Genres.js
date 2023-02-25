@@ -1,4 +1,4 @@
-import {AllGenres} from "../../Components/FilterByGenre/AllGenres/AllGenres";
+import {AllGenres} from "../../Components";
 import {Outlet} from "react-router-dom";
 
 

@@ -1,7 +1,7 @@
 const NotFound = () => {
     return (
         <div>
-            NotFound
+            Sorry. NotFound
         </div>
     );
 };

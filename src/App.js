@@ -1,10 +1,12 @@
 import {Route, Routes} from "react-router-dom";
+import {useState} from "react";
 
 import {MainLayout} from "./Layouts";
 import {Genres, AllFilms, FilmDetails, Home, NotFound, TopMovies, FilteredByGenre} from "./Pages";
-import {useState} from "react";
-import css from './Theme.css'
 import {Header} from "./Components";
+
+// Switcher dark or light theme
+import css from './Theme.css'
 
 
 const App = () => {
@@ -13,6 +15,7 @@ const App = () => {
 
     const handleThemeToggle = () => {
         setIsLightMode(!isLightMode)
+        localStorage.setItem('theme', isLightMode ? 'dark' : 'light');
     };
 
 
@@ -22,7 +25,7 @@ const App = () => {
 
 
           <div  className={isLightMode ? "dark" : "light"}>
-              <Header onThemeToggle={handleThemeToggle} isLight={isLightMode}/>
+              <Header onThemeToggle={handleThemeToggle} isLight={isLightMode} setIsLight={setIsLightMode}/>
 
                   <Routes>
 
