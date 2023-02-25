@@ -24,7 +24,7 @@ useEffect(()=>{
             <img src={isLight? LogoDark : LogoLight} alt="logo" className={css.logo}/>
             <NavLink to={""}>Главная</NavLink>
             <NavLink to={"all_films"}>Фильмы</NavLink>
-            <NavLink to={"top"}>Топ</NavLink>
+
             <NavLink to={"genres"}>Жанры</NavLink>
 
 

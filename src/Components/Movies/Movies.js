@@ -14,14 +14,25 @@ const Movies = ({isLight}) => {
     const [query, setQuery] = useSearchParams({page:'1'})
 
 
+    const [isLoading, setIsLoading] = useState(true);
+
+
     useEffect(()=>{
-        dispatch(movieActions.getAll({page:query.get('page')}))
-    },[dispatch, query])
+        setIsLoading(true)
+        try {
+            dispatch(movieActions.getAll({page:query.get('page')}));
+        } catch (error) {
+            console.log(error);
+        } finally {
+            setIsLoading(false);
+        }},[dispatch, query])
 
 
 
     const [req, setReq]=useState('')
     const [movies, setMovies] = useState([])
+
+
 
 
 
@@ -58,7 +69,7 @@ const Movies = ({isLight}) => {
             </div>
         <div className={css.Container}>
 
-            {(movies.length > 0 ? movies : moviesArr).map(movie => <Movie key={movie.id} movie={movie} isLight={isLight}/>)}
+            {!isLoading && (movies.length > 0 ? movies : moviesArr).map(movie => <Movie key={movie.id} movie={movie} isLight={isLight}/>)}
 
 
 
@@ -67,10 +78,12 @@ const Movies = ({isLight}) => {
 
 
         </div>
+            {isLoading && <div className={css.Loader}>Загрузка...</div>}
             <div className={css.Pagination}>
                 <button disabled={+query.get('page')<=1} onClick={()=>setQuery(query=>({page:+query.get('page')-1}))}>Назад</button>
                 <button onClick={()=>setQuery(query=>({page:+query.get('page')+1}))}>Дальше</button>
             </div>
+
         </>
     );
 };

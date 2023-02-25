@@ -36,7 +36,7 @@ const App = () => {
                           <Route path={'all_films'} element={<AllFilms isLight={isLightMode}/>}/>
                           <Route path={'all_films/:filmId'} element={<FilmDetails/>}/>
 
-                          <Route path={'top'} element={<TopMovies/>}/>
+
 
                             <Route path={'genres'} element={<Genres/>}>
 

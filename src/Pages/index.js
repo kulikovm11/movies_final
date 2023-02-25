@@ -1,5 +1,4 @@
 export * from './HomePage/Home'
-export * from './TopPage/TopMovies'
 export * from './GenresPage/Genres'
 export * from './AllFilmsPage/AllFilms'
 export * from './NotFoundPage/NotFound'
